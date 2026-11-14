@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CUSTOMIZATION AND ADJUSTMENT: Change the browser tab title here. -->
+    <title>Bonbon's Dash - Dog Dash Adventure</title>
+
+    <meta name="description" content="Help a cute toy poodle jump over pillows and boxes in Bonbon's Dash, a cozy endless runner adventure!">
+
+    <!-- CUSTOMIZATION AND ADJUSTMENT: Change the Open Graph title here. -->
+    <meta property="og:title" content="Bonbon's Dash - Dog Dash Adventure">
+
+    <!-- CUSTOMIZATION AND ADJUSTMENT: Change the Open Graph description here. -->
+    <meta property="og:description" content="Join Bonbon the toy poodle on an endless adventure through a cozy living room!">
+
+    <!-- CUSTOMIZATION AND ADJUSTMENT: Replace with your public game URL. -->
+    <meta property="og:url" content="https://example.com/bonbons-dash">
+
+    <!-- CUSTOMIZATION AND ADJUSTMENT: Replace with your public preview image URL. -->
+    <meta property="og:image" content="https://example.com/bonbons-dash-preview.png">
+
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <!-- GAME HEADER -->
+        <header class="game-header">
+
+            <!-- CUSTOMIZATION AND ADJUSTMENT: Change the main displayed game title here. -->
+            <h1 id="gameTitle">Bonbon's Dash</h1>
+
+            <!-- CUSTOMIZATION AND ADJUSTMENT: Change the game description here. -->
+            <p id="gameDescription">
+                Help Bonbon, the adorable toy poodle with a pink nose,
+                dash through a cozy living room!
+                Jump over pillows and boxes, collect dog treats and tennis
+                balls, and see how far you can go!
+            </p>
+
+        </header>
+
+
+        <!-- GAME INFORMATION -->
+        <section class="game-info">
+
+            <div class="score-box">
+                <span class="score-label">SCORE</span>
+                <span id="scoreDisplay">0</span>
+            </div>
+
+            <div class="score-box">
+                <span class="score-label">HIGH SCORE</span>
+                <span id="highScoreDisplay">0</span>
+            </div>
+
+        </section>
+
+
+        <!-- GAME AREA -->
+        <section class="game-area">
+
+            <canvas
+                id="gameCanvas"
+                width="960"
+                height="450"
+                aria-label="Bonbon's Dash endless runner game"
+            >
+                Your browser does not support HTML5 Canvas.
+            </canvas>
+
+
+            <!-- GAME OVERLAY -->
+            <div id="gameOverlay" class="game-overlay">
+
+                <div class="overlay-content">
+
+                    <!-- CUSTOMIZATION AND ADJUSTMENT: Change the Game Over heading here. -->
+                    <h2 id="overlayTitle">Ready to Play?</h2>
+
+                    <!-- CUSTOMIZATION AND ADJUSTMENT: Change the Game Over message here. -->
+                    <p id="overlayMessage">
+                        Help Bonbon jump over obstacles and collect yummy treats!
+                    </p>
+
+                    <!-- CUSTOMIZATION AND ADJUSTMENT: Change the Start and Restart button labels here. -->
+                    <button
+                        id="startButton"
+                        type="button"
+                        data-start-text="Start Game"
+                        data-restart-text="Restart Game"
+                    >
+                        Start Game
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ASSET STATUS -->
+        <p id="assetStatus" class="asset-status" aria-live="polite">
+            Loading Bonbon's Dash...
+        </p>
+
+
+        <!-- GAME INSTRUCTIONS -->
+        <section class="instructions">
+
+            <h2>How to Play</h2>
+
+            <!-- CUSTOMIZATION AND ADJUSTMENT: Change the gameplay instructions here. -->
+            <p id="gameInstructions">
+                Press <strong>SPACE</strong>, <strong>ARROW UP</strong>,
+                click the game, or tap the screen to make Bonbon jump!
+                Avoid pillows and boxes while collecting dog treats
+                and tennis balls.
+            </p>
+
+        </section>
+
+
+        <!-- GAME FOOTER -->
+        <footer class="game-footer">
+            <p>Made with love for Bonbon 🐶</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
